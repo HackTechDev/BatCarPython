@@ -36,6 +36,58 @@ def eventInfo(eventName, char, keysym, ctrl, shift):
 	sock.send('b')
         time.sleep(0.5);
 
+    if char == "1":
+        msg += "Servo 1"
+	sock.send('1')
+	time.sleep(0.5);
+    elif char == "2":
+        msg += "Servo 2"
+	sock.send('2')
+	time.sleep(0.5);
+    elif char == "3":
+        msg += "Servo 3"
+	sock.send('3')
+        time.sleep(0.5);
+
+    if char == "4":
+        msg += "Servo 4"
+	sock.send('4')
+	time.sleep(0.5);
+    elif char == "5":
+        msg += "Servo 5"
+	sock.send('5')
+	time.sleep(0.5);
+    elif char == "6":
+        msg += "Servo 6"
+	sock.send('6')
+        time.sleep(0.5);
+
+    if char == "7":
+        msg += "Servo 7"
+	sock.send('7')
+	time.sleep(0.5);
+    elif char == "8":
+        msg += "Servo 8"
+	sock.send('8')
+	time.sleep(0.5);
+    elif char == "9":
+        msg += "Servo 9"
+	sock.send('9')
+        time.sleep(0.5);
+
+    if char == "y":
+        msg += "Servo y"
+	sock.send('y')
+	time.sleep(0.5);
+    elif char == "h":
+        msg += "Servo h"
+	sock.send('h')
+	time.sleep(0.5);
+    elif char == "n":
+        msg += "Servo n"
+	sock.send('n')
+        time.sleep(0.5);
+
     else:
 	msg += "Inconnu"	
 
